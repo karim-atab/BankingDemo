@@ -1,6 +1,6 @@
 package com.qa;
 
-public class CurrentAccount extends BankAccount{
+public class CurrentAccount extends BankAccount {
     public double getMaxWithdrawlLimit() {
         return maxWithdrawlLimit;
     }
@@ -25,6 +25,9 @@ public class CurrentAccount extends BankAccount{
         else{
             super.setBalance(super.getBalance()-amount);
         }
+    }
+    public String toString(){
+        return super.toString() + " In addition, this current account has a withdrawl limit of " + this.maxWithdrawlLimit;
     }
 
 }

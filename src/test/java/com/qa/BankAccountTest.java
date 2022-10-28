@@ -2,8 +2,6 @@ package com.qa;
 
 import org.junit.jupiter.api.Test;
 
-import javax.management.MBeanNotificationInfo;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BankAccountTest {
@@ -12,7 +10,7 @@ public class BankAccountTest {
         //Arrange
         double amount = -50;
         double expectedAccount = 50;
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
 
         // Act
         account.depositCash(amount);
@@ -28,7 +26,7 @@ public class BankAccountTest {
         //Arrange
         double amount = 25;
         double expectedAccount = 50;
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
         account.setBalance(75);
         // Act
         account.withdrawlCash(amount);
@@ -44,7 +42,7 @@ public class BankAccountTest {
         //ARRANGE
         double amount = 40;
         double expectedAmount = 40;
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
         //ACT
         account.setMinBalance(amount);
         double actualAmount = account.getMinBalance();
@@ -56,7 +54,7 @@ public class BankAccountTest {
         //ARRANGE
         String name = "John Snow";
         String expectedValue = "John Snow";
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
         // ACT
         account.setAccountHolderName(name);
         String actualValue = account.getAccountHolderName();

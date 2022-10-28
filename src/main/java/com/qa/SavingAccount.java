@@ -1,6 +1,6 @@
 package com.qa;
 
-public class SavngAccount extends BankAccount{
+public class SavingAccount extends BankAccount {
     public double getInterestRate() {
         return interestRate;
     }
@@ -12,9 +12,9 @@ public class SavngAccount extends BankAccount{
 
     private double interestRate;
 
-    public SavngAccount(){}
+    public SavingAccount(){}
 
-    public SavngAccount(double balance, double minBalance, String accountHolderName, double interestRate){
+    public SavingAccount(double balance, double minBalance, String accountHolderName, double interestRate){
         super(balance,minBalance,accountHolderName);
         this.interestRate = interestRate;
     }

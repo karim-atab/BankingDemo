@@ -10,7 +10,7 @@ public class SavingAccountTest {
         //Arrange
         double amount = -50;
         double expectedAccount = 50;
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
 
         // Act
         account.depositCash(amount);
@@ -26,7 +26,7 @@ public class SavingAccountTest {
         //Arrange
         double amount = 25;
         double expectedAccount = 50;
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
         account.setBalance(75);
         // Act
         account.withdrawlCash(amount);
@@ -42,7 +42,7 @@ public class SavingAccountTest {
         //ARRANGE
         double amount = 40;
         double expectedAmount = 40;
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
         //ACT
         account.setMinBalance(amount);
         double actualAmount = account.getMinBalance();
@@ -55,7 +55,7 @@ public class SavingAccountTest {
         //ARRANGE
         String name = "John Snow";
         String expectedValue = "John Snow";
-        BankAccount account = new BankAccount();
+        SavingAccount account = new SavingAccount();
         // ACT
         account.setAccountHolderName(name);
         String actualValue = account.getAccountHolderName();
@@ -66,7 +66,11 @@ public class SavingAccountTest {
     @Test
     public void test_add_interest_saving_account(){
         //ARRANGE
-        SavngAccount saver = newSavin
+        SavingAccount saver = new SavingAccount();
+        saver.setBalance(100);
+        saver.setInterestRate(0.125);
+        double expectedValue = 112.5;
+
         // ACT
         account.setAccountHolderName(name);
         String actualValue = account.getAccountHolderName();
