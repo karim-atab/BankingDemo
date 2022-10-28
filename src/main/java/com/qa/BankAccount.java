@@ -7,6 +7,14 @@ public class BankAccount {
     private double Balance = 0;
     private double MinBalance = 50;
     private String AccountHolderName;
+    public BankAccount(){
+
+    }
+    public BankAccount(double balance, double minBalance, String accountHolderName) {
+        Balance = balance;
+        MinBalance = minBalance;
+        AccountHolderName = accountHolderName;
+    }
 
     public double getBalance() {
         return Balance;
