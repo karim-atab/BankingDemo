@@ -72,8 +72,8 @@ public class SavingAccountTest {
         double expectedValue = 112.5;
 
         // ACT
-        account.setAccountHolderName(name);
-        String actualValue = account.getAccountHolderName();
+        saver.setAccountHolderName("René");
+        String actualValue = saver.getAccountHolderName();
         // ASSERT
         assertEquals(expectedValue, actualValue);
     }

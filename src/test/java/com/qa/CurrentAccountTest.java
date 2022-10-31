@@ -2,8 +2,6 @@ package com.qa;
 
 import org.junit.jupiter.api.Test;
 
-import javax.management.MBeanNotificationInfo;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CurrentAccountTest {
