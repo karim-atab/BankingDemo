@@ -8,7 +8,7 @@ public class SavingAccountTest {
     @Test
     public void test_deposit_cash_method_50(){
         //Arrange
-        double amount = -50;
+        double amount = 50;
         double expectedAccount = 50;
         SavingAccount account = new SavingAccount();
 
@@ -40,8 +40,8 @@ public class SavingAccountTest {
     @Test
     public void test_set_minBalance(){
         //ARRANGE
-        double amount = 40;
-        double expectedAmount = 40;
+        double amount = 51;
+        double expectedAmount = 51;
         SavingAccount account = new SavingAccount();
         //ACT
         account.setMinBalance(amount);
@@ -72,8 +72,9 @@ public class SavingAccountTest {
         double expectedValue = 112.5;
 
         // ACT
-        saver.setAccountHolderName("René");
-        String actualValue = saver.getAccountHolderName();
+        saver.setAccountHolderName("John Snow");
+        saver.addInterest();
+        double actualValue = saver.getBalance();
         // ASSERT
         assertEquals(expectedValue, actualValue);
     }

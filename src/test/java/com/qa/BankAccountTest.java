@@ -8,7 +8,7 @@ public class BankAccountTest {
     @Test
     public void test_deposit_cash_method_50(){
         //Arrange
-        double amount = -50;
+        double amount = 50;
         double expectedAccount = 50;
         SavingAccount account = new SavingAccount();
 
@@ -40,8 +40,8 @@ public class BankAccountTest {
     @Test
     public void test_set_minBalance(){
         //ARRANGE
-        double amount = 40;
-        double expectedAmount = 40;
+        double amount = 51;
+        double expectedAmount = 51;
         SavingAccount account = new SavingAccount();
         //ACT
         account.setMinBalance(amount);

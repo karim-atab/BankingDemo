@@ -19,6 +19,6 @@ public class SavingAccount extends BankAccount {
         this.interestRate = interestRate;
     }
     public void addInterest(){
-        super.setBalance(super.getBalance()*this.interestRate);
+        super.setBalance(super.getBalance()*(1+this.interestRate));
     }
 }
