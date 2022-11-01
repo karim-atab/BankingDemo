@@ -12,6 +12,7 @@ public class App
     {
         CurrentAccount current = new CurrentAccount(500,10,"Karim A",35);
         SavingAccount saving = new SavingAccount(500,10,"Karim A",0.1);
+        CurrentAccount reneCurrent = new CurrentAccount(200, 0, "Rene Louis", 300);
 
         ArrayList<BankAccount> karims_accounts = new ArrayList();
         karims_accounts.add(current);
